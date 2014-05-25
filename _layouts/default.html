@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Eric Chen: Homepage</title>
+  <title>Eric Chen: {{ page.title }}</title>
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="the homepage of Tom O'Donnell">
@@ -20,7 +20,7 @@
         <ul class="pull-left">
           <li class="active"><a href="/">Eric Chen</a></li>
           <li><a href="https://about.me/ecmode">About.Me</a></li>
-          <li><a href="https://www.dropbox.com/s/y1y44y3pusgav99/Resume.pdf">Resume</a></li>
+          <li><a href="https://www.dropbox.com/s/5myztz87mnkizid/Eric-Chen-Resume.pdf">Resume</a></li>
           <li><a href="/blog.html">Blog</a></li>
           <li><a href="/projects.html">Projects</a></li>
           <li><a href="http://github.com/ecMode">GitHub</a></li>
@@ -29,26 +29,7 @@
   </div>
   
   <div class="container">
-    <div class="row">
-  <div class="col-md-6">
-  
-    <section id="blog" class="well">
-      <h1>Blog</h1>
-      
-    </section>
-  
-  </div>
-  <div class="col-md-6">
-  
-    <section id="projects" class="well">
-      <h1>Projects</h1>
-      <ul class="posts">
-        
-      </ul>
-    </section>
-    
-  </div>
-</div>
+    {{ content }}
   </div>
   
 </body>

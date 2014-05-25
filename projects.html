@@ -1,0 +1,48 @@
+---
+layout: default
+title: Projects
+---
+
+<div class="page-header">
+  <h1>Projects</h1>
+</div>
+
+{% for project in site.posts %}
+{% if project.category == "Project" %}
+  <div class="row">
+    <div class="span6">
+      <h2><a href="{{ project.url }}">{{ project.name }}</a></h2>
+      
+      <dl class="well">
+        <dt>Homepage</dt>
+        {% if project.homepage %}
+          <dd><a href="{{ project.homepage }}">{{ project.homepage }}</a></dd>
+        {% else %}
+          <dd>none</dd>
+        {% endif %}
+        
+        <dt>GitHub Repository</dt>
+        {% if project.github %}
+          <dd><a href="{{ project.github }}">{{ project.github }}</a></dd>
+        {% else %}
+          <dd>none</dd>
+        {% endif %}
+        
+        <dt>Description</dt>
+        <dd>{{ project.description }}</dd>
+      </dl>
+    
+    </div>
+    <div class="span6">
+    
+      {% if project.imageurl %}
+        <img src="{{ project.imageurl }}" class="img-polaroid" />
+      {% endif %}
+    
+    </div>
+    
+  </div>
+
+  <hr />
+{% endif %}
+{% endfor %}

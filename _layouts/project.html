@@ -1,0 +1,43 @@
+---
+layout: default
+---
+
+<article>
+  <div class="page-header">
+    <h1><small><a href="/projects.html">Projects</a> ></small> {{ page.name }}</h1>
+  </div>
+  
+  <div class="row">
+    <div class="span6">
+    
+      <dl class="well">
+        <dt>Homepage</dt>
+        {% if page.homepage %}
+          <dd><a href="{{ page.homepage }}">{{ page.homepage }}</a></dd>
+        {% else %}
+          <dd>none</dd>
+        {% endif %}
+        
+        <dt>GitHub Repository</dt>
+        {% if page.github %}
+          <dd><a href="{{ page.github }}">{{ page.github }}</a></dd>
+        {% else %}
+          <dd>none</dd>
+        {% endif %}
+        
+        <dt>Description</dt>
+        <dd>{{ page.description }}</dd>
+      </dl>
+    
+    </div>
+    <div class="span6">
+    
+      {% if page.imageurl %}
+        <img src="{{ page.imageurl }}" class="img-polaroid" />
+      {% endif %}
+    
+    </div>
+  </div>
+  
+  {{ content }}
+</article>
