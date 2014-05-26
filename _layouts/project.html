@@ -4,11 +4,11 @@ layout: default
 
 <article>
   <div class="page-header">
-    <h1><small><a href="/projects.html">Projects</a> ></small> {{ page.name }}</h1>
+    <h1><small><a href="/projects.html">Projects</a> > </small> {{ page.name }}</h1>
   </div>
   
   <div class="row">
-    <div class="span6">
+    <div class="col-md-12">
     
       <dl class="well">
         <dt>Homepage</dt>
@@ -30,13 +30,15 @@ layout: default
       </dl>
     
     </div>
-    <div class="span6">
+    <!--
+    <div class="col-md-6">
     
       {% if page.imageurl %}
-        <img src="{{ page.imageurl }}" class="img-polaroid" />
+        <img src="{{ page.imageurl }}" class="img-polaroid img-preview" height="400px" width="350px"/>
       {% endif %}
     
     </div>
+    -->
   </div>
   
   {{ content }}
