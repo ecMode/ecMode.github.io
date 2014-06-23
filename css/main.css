@@ -24,3 +24,11 @@
 .img-preview {
 	border: 1px solid #e3e3e3;
 }
+
+.project-container {
+	border-top: 1px solid rgb(189, 189, 189);
+}
+
+.project-container:last {
+	border-bottom: 1px solid rgb(189, 189, 189);
+}
