@@ -8,6 +8,8 @@ var hash = window.location.hash;
 if (hash) {
     var token = window.location.hash.split('&')[0].split('=')[1];
     target.postMessage(token, 'http://hypem.com'); // fullscreen
+	var editorExtensionId = "iandglnlkjfggjhdjolmphfikbpkehni";
+	chrome.runtime.sendMessage(editorExtensionId, {token: token});
 }
 
 }//]]>  
