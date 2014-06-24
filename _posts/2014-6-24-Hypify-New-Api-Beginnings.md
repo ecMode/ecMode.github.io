@@ -6,6 +6,7 @@ tags:
   - Spotify
   - Web
   - API
+  - Hypify
 category: Blog
 ---
 
