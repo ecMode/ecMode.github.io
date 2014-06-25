@@ -20,20 +20,20 @@ Since the extension is purely client side, I don't get the pleasure of refresh t
 you try to add to a playlist again the login dialog will pop up again.  Similarly everytime you open HypeM, you'll have to re-login with
 your Spotify credentials, since the token is kind of useless to keep.
 
-Some issues I had on the way...
-Outstanding Issue:
-1.  So I now have a reliable way of getting region info about the user.  Specifically in the user info call they tag each user with their country 
+Some issues I had on the way...<br>
+Outstanding Issue:<br>
+1.  So I now have a reliable way of getting region info about the user.  Specifically in the user info call they tag each user with their country <br>
 of origin.  Unfortunately at this point I've already filtered out tracks with non-US territories because I'd like to keep the simple query feature.
 I supposed that could change in the future though.
 
-Pains:
-1.  After an hour realizing that I was sending a GET to add a track to a playlist instead of a POST #stupidme;
+Pains:<br>
+1.  After an hour realizing that I was sending a GET to add a track to a playlist instead of a POST #stupidme;<br>
 2.  Communications between my redirect URI and the content script.  Found that I really just needed to put my initalizers into a document ready
 instead of global.
 
-Things Hypify lacks right now:
-1.  The ability to check if a track already exists on a playlist.  This just seems too heavy to implement right now.  So, you'll have to self managed.
-2.  As mentioned prior, Everything is filtered by US territory, which is awful.  Also the Spotify metadata isn't even too accurate on that point.
-Also I'll have to concede this point for now.
+Things Hypify lacks right now:<br>
+1.  The ability to check if a track already exists on a playlist.  This just seems too heavy to implement right now.  So, you'll have to self managed.<br>
+2.  As mentioned prior, Everything is filtered by US territory, which is awful.  Also the Spotify metadata isn't even too accurate on that point.<br>
+I'll have to concede this point for now.
 
 -Eric
