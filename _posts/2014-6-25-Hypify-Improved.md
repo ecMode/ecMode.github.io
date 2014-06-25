@@ -1,7 +1,7 @@
 ---
 layout: posts
 published: true
-title: Hypify - Integrating new Spotify web API
+title: Hypify - Improved
 tags:
   - Spotify
   - Web
