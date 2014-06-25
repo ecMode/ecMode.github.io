@@ -1,0 +1,18 @@
+---
+layout: default
+title: Bloggit
+---
+
+{% for post in site.posts %}
+{% if post.category == "Blog" %}
+  <div class="row">
+    <div class="span2">
+      <h4 class="pull-right"><em>{{ post.date | date_to_string }}</em></h4>
+    </div>
+    <div class="span10">
+      <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+      <p>{{ post.excerpt }}</p>
+    </div>
+  </div>
+{% endif %}
+{% endfor %}
