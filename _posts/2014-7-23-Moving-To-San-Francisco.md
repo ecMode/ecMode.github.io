@@ -10,7 +10,7 @@ tags:
 category: Blog
 ---
 
-I signed an offer with transitioning startup Audax health last friday as a full stack software engineer.  Now, on the cusp of relocating across the country
+I signed an offer with Audax Health last friday as a full stack software engineer working on health tech.  Now, on the cusp of relocating across the country
 to the west coast, I'm reminded of my last year here at Advanced Systems Concepts.  While I've certainly learned a lot from our software architect before
 he left, the last year has been full of what I identify as "transitional woes."  Having spent the weekend with a girl who has been pretty influential in my life,
 she described her now 25th birthday as the beginning to her "quarter life crisis."  This is certainly a phrase that I've never heard before, but strangely have
